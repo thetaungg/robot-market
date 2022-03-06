@@ -6,8 +6,10 @@ module.exports = {
         'plugin:react/recommended',
         'plugin:prettier/recommended'
     ],
+    plugins: ['eslint-plugin-prettier', 'simple-import-sort', 'import'],
     rules: {
         'prettier/prettier': 'error',
+        'simple-import-sort/imports': 'error',
         'no-console': [1, { allow: ['info', 'error'] }],
         'no-labels': 0,
         'jsx-quotes': [2, 'prefer-single'],
@@ -28,6 +30,5 @@ module.exports = {
                 ]
             }
         ]
-    },
-    plugins: ['eslint-plugin-prettier']
+    }
 };
